@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author lance
  * @date 2019/2/28 15:02
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.iblog.enhance.gateway"})
 @EnableDiscoveryClient
 public class Application {
     public static void main(String[] args) {
