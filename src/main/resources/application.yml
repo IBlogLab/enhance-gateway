@@ -75,20 +75,20 @@ management:
 
 logging:
   level:
-    com.kc: trace
+    org.iblog: trace
 #    org: trace
 
-evo-interface:
-  http-client:
-    config:
-      connectTimeout: 2000
-      socketTimeout: -1
-      connectionRequestTimeout: -1
-      maxTotal: 30
-      maxPerRoute: 5
-  x-task-scheduler:
-    pollPause: 10000
-    poolSize: 5
-    nameSuffix: async-works
-    queueName: schedulable-works-queue
-    maxReties: 10
+#evo-interface:
+#  http-client:
+#    config:
+#      connectTimeout: 2000
+#      socketTimeout: -1
+#      connectionRequestTimeout: -1
+#      maxTotal: 30
+#      maxPerRoute: 5
+#  x-task-scheduler:
+#    pollPause: 10000
+#    poolSize: 5
+#    nameSuffix: async-works
+#    queueName: schedulable-works-queue
+#    maxReties: 10
