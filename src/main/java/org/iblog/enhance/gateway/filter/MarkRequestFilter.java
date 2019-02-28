@@ -13,6 +13,8 @@ import org.springframework.core.Ordered;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.web.server.ServerWebExchange;
 
+import static org.iblog.enhance.gateway.in.HttpAcceptor.HTTP_SCHEME;
+
 /**
  * @author shaoxiao.xu
  * @date 2018/12/25 14:45

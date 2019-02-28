@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.iblog.enhance.gateway.core.Cube;
 import org.iblog.enhance.gateway.core.LoggingRecord;
 import org.iblog.enhance.gateway.core.Result;
+import org.iblog.enhance.gateway.core.Error;
+import org.iblog.enhance.gateway.exception.DataFormatException;
 import org.iblog.enhance.gateway.filter.MarkRequestFilter;
 import org.iblog.enhance.gateway.lifecycle.sched.XTaskScheduler;
 import org.iblog.enhance.gateway.service.LoggingRecordService;
