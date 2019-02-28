@@ -1,8 +1,7 @@
 package org.iblog.enhance.gateway.core;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/28 16:45
+ * @author lance
  */
 public class Result<T> {
     private static final String DEFAULT_CODE_SUCCESS = "200";

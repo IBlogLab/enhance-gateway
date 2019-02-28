@@ -9,8 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/27 15:23
+ * @author lance
  */
 @Data
 @Document(collection = "open_apis")

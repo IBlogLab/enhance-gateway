@@ -27,13 +27,12 @@ import static org.iblog.enhance.gateway.filter.MarkRequestFilter.X_Session_User;
 /**
  * TODO auth ?
  *
- * @author shaoxiao.xu
- * @date 2018/12/27 16:05
+ * @author lance
  */
 @SuppressWarnings("unchecked")
 @RestController
 @RequestMapping(
-        value = "/api/interface/managed/open-api",
+        value = "/api/enhance-gateway/managed/open-api",
         consumes = "application/json; charset=utf-8",
         produces = "application/json; charset=utf-8")
 public class OpenApiResource {

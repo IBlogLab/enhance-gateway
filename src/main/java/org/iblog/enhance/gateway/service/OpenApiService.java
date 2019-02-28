@@ -7,8 +7,7 @@ import com.google.common.base.Optional;
 import com.google.common.cache.CacheStats;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/28 18:07
+ * @author lance
  */
 public interface OpenApiService {
     Optional<OpenApi> create(OpenApi api);

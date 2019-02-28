@@ -13,8 +13,7 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.collect.ImmutableList;
 
 /**
- * @author chen.kuan
- * @date 2018-12-24 17:00
+ * @author lance
  */
 public class HttpAcceptor implements Acceptor, GlobalFilter, Ordered {
 	// spring boot auto configure on condition

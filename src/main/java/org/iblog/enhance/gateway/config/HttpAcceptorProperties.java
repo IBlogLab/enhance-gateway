@@ -4,10 +4,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 15:04
+ * @author lance
  */
-@ConfigurationProperties("quicktron.acceptor.http")
+@ConfigurationProperties("enhance-gateway.acceptor.http")
 @Validated
 public class HttpAcceptorProperties {
     private boolean start = true;

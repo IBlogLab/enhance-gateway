@@ -23,8 +23,7 @@ import org.springframework.web.server.ServerWebExchange;
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.ORIGINAL_RESPONSE_CONTENT_TYPE_ATTR;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 17:06
+ * @author lance
  */
 @SuppressWarnings("unchecked")
 public abstract class ModifyResponseBodyFilter extends InterfaceGlobalFilter {

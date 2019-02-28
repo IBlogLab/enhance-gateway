@@ -1,8 +1,7 @@
 package org.iblog.enhance.gateway.in;
 
 /**
- * @author chen.kuan
- * @date 2018-12-24 16:49
+ * @author lance
  */
 public interface Acceptor {
 	// start method

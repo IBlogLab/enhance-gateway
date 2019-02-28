@@ -16,8 +16,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 16:29
+ * @author lance
  */
 @Configuration
 public class LifecycleRegistry implements InitializingBean {

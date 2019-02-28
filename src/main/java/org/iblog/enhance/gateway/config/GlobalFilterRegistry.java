@@ -35,8 +35,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 16:19
+ * @author lance
  */
 @Configuration
 public class GlobalFilterRegistry {

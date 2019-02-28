@@ -1,8 +1,7 @@
 package org.iblog.enhance.gateway.core;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/28 16:02
+ * @author lance
  */
 public enum ResultCode {
     OK,

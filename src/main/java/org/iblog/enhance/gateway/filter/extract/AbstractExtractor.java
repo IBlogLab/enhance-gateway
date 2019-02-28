@@ -12,8 +12,8 @@ import com.google.common.collect.Lists;
 
 /**
  * the default implementation does not provide any capabilities.
- * @author shaoxiao.xu
- * @date 2019/1/9 18:04
+ *
+ * @author lance
  */
 @SuppressWarnings("unchecked")
 public abstract class AbstractExtractor implements Extractor {

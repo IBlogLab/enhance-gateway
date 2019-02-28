@@ -5,8 +5,7 @@ import java.util.function.Function;
 import org.iblog.enhance.gateway.core.KeyWord;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 19:31
+ * @author lance
  */
 public interface ExtractFunction<T> extends Function<T, List<KeyWord>> {
     @Override

@@ -5,8 +5,7 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 20:23
+ * @author lance
  */
 @Data
 public class Schedulable {

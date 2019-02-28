@@ -19,11 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/13 15:43
+ * @author lance
  */
 @RestController
-@RequestMapping("/api/interface/reprocess/{id}")
+@RequestMapping("/api/enhance-gateway/reprocess/{id}")
 public class ReprocessController {
     private static final Logger logger = LoggerFactory.getLogger(ReprocessController.class);
 

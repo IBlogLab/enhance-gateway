@@ -12,8 +12,7 @@ import org.springframework.stereotype.Component;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 20:05
+ * @author lance
  */
 @Component
 public class LoggingLifecycleManager {

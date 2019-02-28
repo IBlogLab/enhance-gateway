@@ -32,8 +32,7 @@ import org.springframework.web.server.ServerWebExchange;
 import org.iblog.enhance.gateway.core.Error;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/18 10:38
+ * @author lance
  */
 public class InterfaceExceptionHandler extends DefaultErrorWebExceptionHandler {
     private static final Logger logger = LoggerFactory.getLogger(InterfaceExceptionHandler.class);

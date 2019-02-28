@@ -32,13 +32,12 @@ import org.iblog.enhance.gateway.core.Error;
 import static org.iblog.enhance.gateway.filter.MarkRequestFilter.X_Session_User;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 14:09
+ * @author lance
  */
 @SuppressWarnings("unchecked")
 @RestController
 @RequestMapping(
-        value = "/api/interface/managed/logging-record",
+        value = "/api/enhance-gateway/managed/logging-record",
         consumes = "application/json; charset=utf-8",
         produces = "application/json; charset=utf-8")
 public class LoggingRecordResource {

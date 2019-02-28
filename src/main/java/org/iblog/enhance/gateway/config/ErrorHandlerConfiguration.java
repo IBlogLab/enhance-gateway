@@ -19,8 +19,7 @@ import org.springframework.http.codec.ServerCodecConfigurer;
 import org.springframework.web.reactive.result.view.ViewResolver;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/18 16:28
+ * @author lance
  */
 @Configuration
 @EnableConfigurationProperties({ServerProperties.class, ResourceProperties.class})

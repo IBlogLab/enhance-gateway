@@ -18,8 +18,7 @@ import org.iblog.enhance.gateway.core.Error;
  * Logging response attributions that filled after
  * {@link org.springframework.cloud.gateway.filter.NettyWriteResponseFilter}
  *
- * @author shaoxiao.xu
- * @date 2019/1/4 11:28
+ * @author lance
  */
 public class LoggingResponseStatusFilter extends InterfaceGlobalFilter {
     private static final Logger logger = LoggerFactory.getLogger(LoggingResponseStatusFilter.class);

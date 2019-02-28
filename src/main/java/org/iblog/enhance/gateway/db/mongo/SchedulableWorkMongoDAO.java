@@ -18,8 +18,7 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 10:23
+ * @author lance
  */
 @Repository
 public class SchedulableWorkMongoDAO extends BaseMongoDAO {

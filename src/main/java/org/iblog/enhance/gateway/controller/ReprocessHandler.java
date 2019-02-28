@@ -17,8 +17,7 @@ import org.springframework.stereotype.Component;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 16:02
+ * @author lance
  */
 @Component
 public class ReprocessHandler implements SchedulableHandler {

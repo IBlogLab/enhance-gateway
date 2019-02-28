@@ -17,8 +17,7 @@ import com.google.common.collect.Maps;
 /**
  * manage priorities of filters by default.
  *
- * @author lance xu
- * @date2018年12月06日 20:02
+ * @author lance
  */
 public class PriorityAccess {
 

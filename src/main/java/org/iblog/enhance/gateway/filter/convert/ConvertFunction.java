@@ -4,8 +4,7 @@ import java.util.function.Function;
 import com.google.common.base.Optional;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/10 14:53
+ * @author lance
  */
 public interface ConvertFunction<T, R> extends Function<T, Optional<R>> {
     @Override

@@ -7,8 +7,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/10 15:35
+ * @author lance
  */
 public class Config<T> {
     private String client;

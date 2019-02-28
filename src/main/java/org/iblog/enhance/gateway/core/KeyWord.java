@@ -4,8 +4,7 @@ import java.util.List;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/29 17:53
+ * @author lance
  */
 public class KeyWord {
     private String key;

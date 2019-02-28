@@ -31,7 +31,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
     public void find() {
         LoggingRecord record = new LoggingRecord();
         record.setId("1");
-        record.setUri("/evo-interface/logging-record");
+        record.setUri("/enhance-gateway/logging-record");
         record.setApiCode("logging-record-post");
         record.setMethod(HttpMethod.POST);
         record.setCreatedAt(1000);
@@ -40,7 +40,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
 
         LoggingRecord insert = mongoDAO.find("1");
         assertNotNull(insert);
-        assertEquals("/evo-interface/logging-record", insert.getUri());
+        assertEquals("/enhance-gateway/logging-record", insert.getUri());
         assertEquals(1000, insert.getCreatedAt());
     }
 
@@ -48,7 +48,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
     public void exist() {
         LoggingRecord record = new LoggingRecord();
         record.setId("1");
-        record.setUri("/evo-interface/logging-record");
+        record.setUri("/enhance-gateway/logging-record");
         record.setApiCode("logging-record-post");
         record.setMethod(HttpMethod.POST);
         record.setCreatedAt(1000);
@@ -61,7 +61,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
     public void delete() {
         LoggingRecord record = new LoggingRecord();
         record.setId("1");
-        record.setUri("/evo-interface/logging-record");
+        record.setUri("/enhance-gateway/logging-record");
         record.setApiCode("logging-record-post");
         record.setMethod(HttpMethod.POST);
         record.setCreatedAt(1000);
@@ -79,7 +79,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
     public void update() {
         LoggingRecord record = new LoggingRecord();
         record.setId("1");
-        record.setUri("/evo-interface/logging-record");
+        record.setUri("/enhance-gateway/logging-record");
         record.setApiCode("logging-record-post");
         record.setMethod(HttpMethod.POST);
         record.setCreatedAt(1000);
@@ -88,7 +88,7 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
 
         LoggingRecord insert = mongoDAO.find("1");
         assertNotNull(insert);
-        assertEquals("/evo-interface/logging-record", insert.getUri());
+        assertEquals("/enhance-gateway/logging-record", insert.getUri());
         assertEquals(1000, insert.getCreatedAt());
         assertEquals(Lists.newArrayList("123456"), insert.getTags().get(0).getValues());
 
@@ -197,11 +197,11 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
     public void count() {
         initData();
         LoggingRecordFilter.Builder builder = new LoggingRecordFilter.Builder();
-        builder.setUris(Lists.newArrayList("/evo-interface/logging-record/*"));
+        builder.setUris(Lists.newArrayList("/enhance-gateway/logging-record/*"));
         long count = mongoDAO.count(builder.build());
         assertEquals(10, count);
 
-        builder.setUris(Lists.newArrayList("/evo-interface/logging-record/*", "/evo-interface/open-api/*"));
+        builder.setUris(Lists.newArrayList("/enhance-gateway/logging-record/*", "/enhance-gateway/open-api/*"));
         count = mongoDAO.count(builder.build());
         assertEquals(20, count);
     }
@@ -228,10 +228,10 @@ public class LoggingRecordMongoDAOTest extends MongodbDAOTestBase {
             record.setId(String.valueOf(i));
             record.setBusinessType(BusinessType.UNKNOWN.toString());
             if (i % 2 == 0) {
-                record.setUri("/evo-interface/logging-record/" + i);
+                record.setUri("/enhance-gateway/logging-record/" + i);
                 record.setAsync(true);
             } else {
-                record.setUri("/evo-interface/open-api/" + i);
+                record.setUri("/enhance-gateway/open-api/" + i);
                 record.setAsync(false);
             }
             record.setError(Error.OK);

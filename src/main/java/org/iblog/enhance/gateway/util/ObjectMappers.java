@@ -9,6 +9,9 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * @author lance
+ */
 public class ObjectMappers {
     private static final ObjectMapper DEFAULT_INSTANCE = new ObjectMapper();
 

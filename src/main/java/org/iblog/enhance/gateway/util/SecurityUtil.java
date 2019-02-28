@@ -3,6 +3,10 @@ package org.iblog.enhance.gateway.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ *
+ * @author lance
+ */
 public class SecurityUtil {
 
     public static byte[] md5Digest(byte[] bytes) {

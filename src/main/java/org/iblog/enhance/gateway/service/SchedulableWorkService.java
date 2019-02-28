@@ -6,8 +6,7 @@ import org.iblog.enhance.gateway.db.filter.SchedulableWorkFilter;
 import com.google.common.base.Optional;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 10:52
+ * @author lance
  */
 public interface SchedulableWorkService {
     Optional<SchedulableWork> create(SchedulableWork work);

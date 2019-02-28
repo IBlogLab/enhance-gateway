@@ -15,8 +15,7 @@ import org.slf4j.LoggerFactory;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/25 11:15
+ * @author lance
  */
 public class LoggingConvertedBodyObserver implements IEventObserver {
     private static final Logger logger = LoggerFactory.getLogger(

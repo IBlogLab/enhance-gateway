@@ -11,8 +11,7 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.collect.Lists;
 
 /**
- * @author chen.kuan
- * @date 2018-12-24 16:56
+ * @author lance
  */
 public class FilterChainDispatcher {
 	// entrance of spring filter chain

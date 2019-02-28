@@ -13,8 +13,7 @@ import org.springframework.stereotype.Service;
 import com.google.common.base.Optional;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 14:01
+ * @author lance
  */
 @Service
 public class LoggingRecordServiceImpl implements LoggingRecordService {

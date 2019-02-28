@@ -7,8 +7,7 @@ import org.iblog.enhance.gateway.db.filter.LoggingRecordFilter;
 import com.google.common.base.Optional;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 13:57
+ * @author lance
  */
 public interface LoggingRecordService {
     Optional<LoggingRecord> create(LoggingRecord record);

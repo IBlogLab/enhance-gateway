@@ -1,8 +1,7 @@
 package org.iblog.enhance.gateway.core;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 14:28
+ * @author lance
  */
 public enum RequestType {
     UNKNOWN,

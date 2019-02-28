@@ -35,11 +35,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/18 10:32
+ * @author lance
  */
 @Component
-@ConfigurationProperties(prefix = "evo-interface.http-client")
+@ConfigurationProperties(prefix = "enhance-gateway.http-client")
 public class HttpClientConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(HttpClientConfiguration.class);
 

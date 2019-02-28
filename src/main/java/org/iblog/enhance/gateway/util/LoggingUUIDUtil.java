@@ -12,8 +12,7 @@ import static org.iblog.enhance.gateway.filter.MarkRequestFilter.X_Session_Secre
 import static org.iblog.enhance.gateway.filter.MarkRequestFilter.X_Session_User;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/20 14:16
+ * @author lance
  */
 public class LoggingUUIDUtil {
     /**

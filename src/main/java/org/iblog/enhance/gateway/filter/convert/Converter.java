@@ -7,8 +7,7 @@ import com.google.common.base.Optional;
 /**
  * Service Provider Interface.
  *
- * @author shaoxiao.xu
- * @date 2019/1/8 17:32
+ * @author lance
  */
 public interface Converter {
     /**

@@ -27,7 +27,7 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
     public void testCreate() {
         OpenApi api = new OpenApi();
         api.setId("0002");
-        api.setUriPattern("/evo-interface/open-api");
+        api.setUriPattern("/enhance-gateway/open-api");
         api.setMethod("POST");
         api.setApiCode("test_api");
         api.setBusinessType("create");
@@ -41,7 +41,7 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
     public void testExist() {
         OpenApi api = new OpenApi();
         api.setId("0002");
-        api.setUriPattern("/evo-interface/open-api");
+        api.setUriPattern("/enhance-gateway/open-api");
         api.setMethod("POST");
         api.setApiCode("test_api");
         api.setBusinessType("create");
@@ -54,7 +54,7 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
     public void testUpdate() {
         OpenApi api = new OpenApi();
         api.setId("0002");
-        api.setUriPattern("/evo-interface/open-api");
+        api.setUriPattern("/enhance-gateway/open-api");
         api.setMethod("POST");
         api.setApiCode("test_api");
         api.setBusinessType("create");
@@ -72,7 +72,7 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
     public void testDelete() {
         OpenApi api = new OpenApi();
         api.setId("0002");
-        api.setUriPattern("/evo-interface/open-api");
+        api.setUriPattern("/enhance-gateway/open-api");
         api.setMethod("POST");
         api.setApiCode("test_api");
         api.setBusinessType("create");
@@ -125,11 +125,11 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
         assertEquals(14, list.size());
 
         builder.setStart(0).setEnd(5000)
-                .setUris(Lists.newArrayList("/evo-interface/test/1", "/evo-interface/test/4", "/evo-interface/test/19"));
+                .setUris(Lists.newArrayList("/enhance-gateway/test/1", "/enhance-gateway/test/4", "/enhance-gateway/test/19"));
         list = mongoDAO.list(builder.build());
         assertNotNull(list);
         assertEquals(3, list.size());
-        assertEquals(Lists.newArrayList("/evo-interface/test/1", "/evo-interface/test/4", "/evo-interface/test/19"),
+        assertEquals(Lists.newArrayList("/enhance-gateway/test/1", "/enhance-gateway/test/4", "/enhance-gateway/test/19"),
                 list.stream().map(OpenApi::getUriPattern).collect(Collectors.toList()));
 
         builder.setUris(null)
@@ -168,7 +168,7 @@ public class OpenApiMongoDAOTest extends MongodbDAOTestBase {
         for (int i = 0; i < 20; i++) {
             OpenApi api = new OpenApi();
             api.setId(String.valueOf(i));
-            api.setUriPattern("/evo-interface/test/" + i);
+            api.setUriPattern("/enhance-gateway/test/" + i);
             if (i % 3 == 0) {
                 api.setMethod("GET");
                 api.setApiCode("code_" + 0);

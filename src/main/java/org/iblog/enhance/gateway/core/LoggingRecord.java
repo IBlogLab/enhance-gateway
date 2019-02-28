@@ -10,8 +10,7 @@ import org.springframework.http.HttpMethod;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/26 15:23
+ * @author lance
  */
 @Data
 @Document(collection = "logging_records")

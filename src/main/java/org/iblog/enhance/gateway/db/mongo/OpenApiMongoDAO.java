@@ -17,8 +17,7 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/27 16:08
+ * @author lance
  */
 @Repository
 public class OpenApiMongoDAO extends BaseMongoDAO {

@@ -14,8 +14,7 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/3 17:39
+ * @author lance
  */
 public class LoggingRequestObserver implements IEventObserver {
     private static final Logger logger = LoggerFactory.getLogger(LoggingRequestObserver.class);

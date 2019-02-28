@@ -16,8 +16,7 @@ import org.springframework.stereotype.Component;
 /**
  * TODO describe
  *
- * @author shaoxiao.xu
- * @date 2019/1/4 18:04
+ * @author lance
  */
 @Component
 public class GlobalExecutor {

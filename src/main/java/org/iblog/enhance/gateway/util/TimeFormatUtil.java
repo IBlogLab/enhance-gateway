@@ -8,6 +8,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 import com.google.common.base.Optional;
 
+/**
+ * @author lance
+ */
 public class TimeFormatUtil {
 
     public static final ZoneId ZONE_ID_UTC = ZoneId.of("UTC");

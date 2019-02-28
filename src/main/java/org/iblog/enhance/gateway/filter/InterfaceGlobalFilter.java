@@ -18,8 +18,7 @@ import org.springframework.web.server.ServerWebExchange;
 import org.iblog.enhance.gateway.core.Error;
 
 /**
- * @author chen.kuan
- * @date 2018-12-24 17:04
+ * @author lance
  */
 public abstract class InterfaceGlobalFilter implements GlobalFilter, Ordered {
     protected final Clock clock = Clock.defaultClock();

@@ -9,8 +9,7 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/16 17:38
+ * @author lance
  */
 public class WorkQueue {
     private static final Logger logger = LoggerFactory.getLogger(WorkQueue.class);

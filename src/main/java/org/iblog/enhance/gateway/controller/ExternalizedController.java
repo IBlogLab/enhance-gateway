@@ -26,11 +26,10 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/20 11:21
+ * @author lance
  */
 @RestController
-@RequestMapping("/api/interface/externalized")
+@RequestMapping("/api/enhance-gateway/externalized")
 public class ExternalizedController {
     private static final Logger logger = LoggerFactory.getLogger(ExternalizedController.class);
     private final Clock clock = Clock.defaultClock();

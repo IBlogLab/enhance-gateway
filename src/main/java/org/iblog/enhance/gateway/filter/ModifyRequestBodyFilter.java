@@ -17,8 +17,7 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 16:34
+ * @author lance
  */
 @SuppressWarnings("unchecked")
 public abstract class ModifyRequestBodyFilter extends InterfaceGlobalFilter {

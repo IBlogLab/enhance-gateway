@@ -4,6 +4,10 @@ import lombok.Getter;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * @author lance
+ * @param <T>
+ */
 @Getter
 public class PageResult<T> extends Result<T> {
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)

@@ -40,11 +40,10 @@ import com.google.common.util.concurrent.Uninterruptibles;
  *   - For periodical tasks, the interval between consecutive invocations need to
  *   be large enough (> 1 minute).
  *
- * @author shaoxiao.xu
- * @date 2018/12/25 20:07
+ * @author lance
  */
 @Component
-@ConfigurationProperties(prefix = "evo-interface.x-task-scheduler")
+@ConfigurationProperties(prefix = "enhance-gateway.x-task-scheduler")
 public class XTaskScheduler {
     private static final Logger logger = LoggerFactory.getLogger(XTaskScheduler.class);
 

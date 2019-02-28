@@ -3,8 +3,7 @@ package org.iblog.enhance.gateway.db;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/28 19:07
+ * @author lance
  */
 public class BaseMongoDAO {
     protected final MongoTemplate mongoTemplate;

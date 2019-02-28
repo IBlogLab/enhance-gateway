@@ -5,8 +5,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/28 18:54
+ * @author lance
  */
 public class OpenApiFilter {
     public final List<String> uris;

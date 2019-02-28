@@ -14,6 +14,9 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Strings;
 import com.google.common.util.concurrent.Uninterruptibles;
 
+/**
+ * @author lance
+ */
 public class LoggingResponseObserver implements IEventObserver {
     private static final Logger logger = LoggerFactory.getLogger(LoggingResponseObserver.class);
 

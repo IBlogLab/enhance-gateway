@@ -13,8 +13,7 @@ import org.springframework.http.server.reactive.ServerHttpResponseDecorator;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 10:49
+ * @author lance
  */
 public class LoggingResponseBodyFilter extends ModifyResponseBodyFilter {
     private static final Logger logger = LoggerFactory.getLogger(LoggingResponseBodyFilter.class);

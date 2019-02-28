@@ -12,8 +12,7 @@ import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/8 17:37
+ * @author lance
  */
 @Component
 public class ExtractorWrapper {

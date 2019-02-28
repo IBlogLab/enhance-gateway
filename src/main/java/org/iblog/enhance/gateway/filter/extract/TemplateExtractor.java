@@ -12,8 +12,7 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 20:09
+ * @author lance
  */
 public class TemplateExtractor extends AbstractExtractor {
     private static final Logger logger = LoggerFactory.getLogger(TemplateExtractor.class);

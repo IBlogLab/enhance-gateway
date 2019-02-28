@@ -5,8 +5,7 @@ import java.util.List;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/4 10:42
+ * @author lance
  */
 public class ObjectUpdateUtil {
     public static <T> T updateField(T original, T value, MutableBoolean updated) {

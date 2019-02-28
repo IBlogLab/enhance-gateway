@@ -8,8 +8,7 @@ import org.springframework.http.HttpMethod;
 /**
  * wrapper of the request necessary information.
  *
- * @author shaoxiao.xu
- * @date 2019/2/20 11:25
+ * @author lance
  */
 @Data
 public class Cube {

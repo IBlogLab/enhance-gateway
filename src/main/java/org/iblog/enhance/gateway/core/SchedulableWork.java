@@ -7,8 +7,7 @@ import org.iblog.enhance.gateway.util.ObjectUpdateUtil;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 10:08
+ * @author lance
  */
 @Data
 @Document(collection = "schedulable_works")

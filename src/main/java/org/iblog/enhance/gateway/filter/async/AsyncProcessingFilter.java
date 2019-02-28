@@ -17,8 +17,7 @@ import org.springframework.web.server.ServerWebExchange;
 import com.google.common.collect.Maps;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/24 10:58
+ * @author lance
  */
 public class AsyncProcessingFilter extends InterfaceGlobalFilter {
     private final Config config;

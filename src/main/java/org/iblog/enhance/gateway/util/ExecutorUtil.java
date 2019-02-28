@@ -13,8 +13,7 @@ import java.util.concurrent.TimeUnit;
  * Utilities that are commonly useful when using {@link Executors}, {@link ExecutorService},
  * {@link ThreadPoolExecutor} and the like.
  *
- * @author shaoxiao.xu
- * @date 2019/1/15 18:20
+ * @author lance
  */
 public class ExecutorUtil {
     /**

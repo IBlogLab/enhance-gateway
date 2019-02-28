@@ -4,8 +4,7 @@ import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 10:34
+ * @author lance
  */
 public class SchedulableWorkFilter {
     public final List<String> types;

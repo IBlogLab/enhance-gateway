@@ -11,8 +11,7 @@ import com.mongodb.MongoClient;
 import static org.junit.Assume.assumeTrue;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/27 18:42
+ * @author lance
  */
 public class MongodbDAOTestBase {
 

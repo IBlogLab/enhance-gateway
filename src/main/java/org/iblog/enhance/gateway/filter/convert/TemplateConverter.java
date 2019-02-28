@@ -13,8 +13,7 @@ import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/11 11:21
+ * @author lance
  */
 public class TemplateConverter extends AbstractConverter {
     private static final Logger logger = LoggerFactory.getLogger(TemplateConverter.class);

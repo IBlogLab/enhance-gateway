@@ -8,8 +8,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Service Provider Interface.
  *
- * @author shaoxiao.xu
- * @date 2019/1/8 14:02
+ * @author lance
  */
 public interface Extractor {
     default String getName() {

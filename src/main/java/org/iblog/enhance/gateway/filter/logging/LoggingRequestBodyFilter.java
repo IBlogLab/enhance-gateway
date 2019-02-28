@@ -14,8 +14,7 @@ import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 10:48
+ * @author lance
  */
 public class LoggingRequestBodyFilter extends ModifyRequestBodyFilter {
     private static final Logger logger = LoggerFactory.getLogger(LoggingRequestBodyFilter.class);

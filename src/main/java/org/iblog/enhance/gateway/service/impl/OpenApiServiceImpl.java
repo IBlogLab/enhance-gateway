@@ -28,8 +28,7 @@ import com.google.common.cache.CacheStats;
 import com.google.common.cache.RemovalListener;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/28 18:09
+ * @author lance
  */
 @Service
 public class OpenApiServiceImpl implements OpenApiService {

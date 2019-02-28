@@ -16,8 +16,7 @@ import org.springframework.web.server.ServerWebExchange;
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/13 16:48
+ * @author lance
  */
 public class LoggingRealPathFilter extends InterfaceGlobalFilter {
     private static final Logger logger = LoggerFactory.getLogger(LoggingRealPathFilter.class);

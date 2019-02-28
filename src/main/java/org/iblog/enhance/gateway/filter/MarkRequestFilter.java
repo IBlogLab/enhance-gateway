@@ -16,8 +16,7 @@ import org.springframework.web.server.ServerWebExchange;
 import static org.iblog.enhance.gateway.in.HttpAcceptor.HTTP_SCHEME;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/25 14:45
+ * @author lance
  */
 public class MarkRequestFilter implements GlobalFilter, Ordered {
     private static final Logger logger = LoggerFactory.getLogger(MarkRequestFilter.class);

@@ -9,8 +9,7 @@ import org.springframework.http.HttpMethod;
 import org.iblog.enhance.gateway.core.Error;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/29 17:37
+ * @author lance
  */
 public class LoggingRecordFilter {
     public final List<String> uris;

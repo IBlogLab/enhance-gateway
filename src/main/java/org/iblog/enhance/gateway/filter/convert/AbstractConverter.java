@@ -13,8 +13,7 @@ import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/10 11:25
+ * @author lance
  */
 public abstract class AbstractConverter implements Converter {
 

@@ -1,8 +1,7 @@
 package org.iblog.enhance.gateway.core;
 
 /**
- * @author shaoxiao.xu
- * @date 2018/12/26 16:03
+ * @author lance
  */
 public enum Error {
     UNKNOWN,

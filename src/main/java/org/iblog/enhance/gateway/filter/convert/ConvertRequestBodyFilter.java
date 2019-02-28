@@ -10,8 +10,7 @@ import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 17:40
+ * @author lance
  */
 public class ConvertRequestBodyFilter extends ModifyRequestBodyFilter {
     private static final Logger logger = LoggerFactory.getLogger(ConvertRequestBodyFilter.class);

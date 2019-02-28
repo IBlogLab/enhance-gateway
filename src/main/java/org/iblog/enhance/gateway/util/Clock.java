@@ -3,8 +3,7 @@ package org.iblog.enhance.gateway.util;
 /**
  * An abstraction for how time passes.
  *
- * @author lance xu
- * @date2018年12月06日 14:53
+ * @author lance
  */
 public abstract class Clock {
     public abstract long getTick();

@@ -5,8 +5,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/4 18:24
+ * @author lance
  */
 public class NamedThreadFactory implements ThreadFactory {
     private final String baseName;

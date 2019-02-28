@@ -28,8 +28,7 @@ import org.springframework.stereotype.Component;
 import com.google.common.base.Strings;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/15 11:41
+ * @author lance
  */
 @Component
 public class HttpClientProvider {

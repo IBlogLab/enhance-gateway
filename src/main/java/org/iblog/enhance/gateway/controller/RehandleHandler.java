@@ -5,8 +5,7 @@ import org.iblog.enhance.gateway.lifecycle.sched.SchedulableHandler;
 import org.springframework.stereotype.Component;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/2/21 16:01
+ * @author lance
  */
 @Component
 public class RehandleHandler implements SchedulableHandler {

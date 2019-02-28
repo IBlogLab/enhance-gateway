@@ -11,8 +11,7 @@ import org.springframework.http.server.reactive.ServerHttpResponseDecorator;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author shaoxiao.xu
- * @date 2019/1/14 17:55
+ * @author lance
  */
 public class ConvertResponseBodyFilter extends ModifyResponseBodyFilter {
     private static final Logger logger = LoggerFactory.getLogger(ConvertResponseBodyFilter.class);
