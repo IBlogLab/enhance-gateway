@@ -1,3 +1,41 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### rebel
+rebel.xml
+rebel-remote.xml
+*.rebel-remote.xml.bak
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+### project ###
+drc.log
+application.pid
+antx.properties
+
+###
+logs
+src/enhance-gateway.iml
+
 # Compiled class file
 *.class
 

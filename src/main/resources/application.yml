@@ -1,0 +1,94 @@
+server:
+  port: 10080
+
+spring:
+  application:
+    name: enhance-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # enable service discovery
+          route-id-prefix: base_discovery
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "docs.spring.io"
+            allowedMethods:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - HEAD
+            - OPTIONS
+            - PATCH
+      routes:
+      - id: basic-service
+        uri: lb://basic-service
+        predicates:
+        - Path=/basic/**
+        filters:
+        - RewritePath=/basic/(?<path>.*), /$\{path}
+        - AddRequestHeader=X-Request-Foo, Bar
+        - name: Retry
+          args:
+            retries: 5
+            statuses:
+              - SERVICE_UNAVAILABLE
+              - REQUEST_TIMEOUT
+            series:
+              - SERVER_ERROR
+              - CLIENT_ERROR
+
+      httpclient:
+        connect-timeout: 300
+        response-timeout: 3M
+        pool:
+          name: gateway-http-proxy
+          max-connections: 30
+        ssl:
+          use-insecure-trust-manager: false
+
+    config:
+      enabled: false
+
+  # mongodb config
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: enhance-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+
+logging:
+  level:
+    com.kc: trace
+#    org: trace
+
+evo-interface:
+  http-client:
+    config:
+      connectTimeout: 2000
+      socketTimeout: -1
+      connectionRequestTimeout: -1
+      maxTotal: 30
+      maxPerRoute: 5
+  x-task-scheduler:
+    pollPause: 10000
+    poolSize: 5
+    nameSuffix: async-works
+    queueName: schedulable-works-queue
+    maxReties: 10
