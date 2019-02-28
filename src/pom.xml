@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!--<start-class>com.kc.evo.interfaces.bootstrap.Application</start-class>-->
+        <start-class>org.iblog.enhance.gateway.Application</start-class>
         <parent-version>0.0.1-RELEASE</parent-version>
         <google-guava-version>23.5-jre</google-guava-version>
         <jdbi-version>3.5.1</jdbi-version>
