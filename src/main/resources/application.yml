@@ -64,14 +64,29 @@ eureka:
     service-url:
       defaultZone: http://192.168.21.108:10061/eureka/
 
+# configuration of the actuator endpoints
 management:
+  metrics:
+    export:
+      prometheus: # prometheus configuration
+        enabled: true
+        descriptions: true
+        step: 1m
   endpoint:
     gateway:
       enabled: true
+    prometheus:
+      enabled: true
+    threaddump:
+      enabled: true
+    restart:
+      enabled: true # POST method ${hostname}/actuator/restart
+    shutdown:
+      enabled: true # POST method ${hostname}/actuator/shutdown
   endpoints:
     web:
       exposure:
-        include: gateway
+        include: "*" # enable all endpoints
 
 logging:
   level:
