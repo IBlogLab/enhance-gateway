@@ -38,7 +38,10 @@ spring:
               - REQUEST_TIMEOUT
             series:
               - SERVER_ERROR
-              - CLIENT_ERROR
+        - name: Hystrix
+          args:
+            name: basic-service-unavailable
+            fallbackUri: forward:/api/hystrix/service-unavailable
 
       httpclient:
         connect-timeout: 300
