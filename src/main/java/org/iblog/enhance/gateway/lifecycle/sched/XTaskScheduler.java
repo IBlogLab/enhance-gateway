@@ -104,8 +104,11 @@ public class XTaskScheduler {
     }
 
     @PreDestroy
-    public void destroy() {
+    public void destroy() throws InterruptedException {
         stopping.set(true);
+        executor.shutdown();
+        executor.awaitTermination(200, TimeUnit.MILLISECONDS);
+        executor.shutdownNow();
         logger.info("XTaskScheduler destroy at {}", clock.getTime());
     }
 
