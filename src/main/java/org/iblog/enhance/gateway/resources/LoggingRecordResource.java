@@ -157,7 +157,7 @@ public class LoggingRecordResource {
 
         if (CollectionUtils.isNotEmpty(statuses)) {
             List<Integer> statusList = statuses.stream()
-                    .filter(status -> status > 0)
+                    .filter(status -> status != null && status > 0)
                     .collect(Collectors.toList());
             if (CollectionUtils.isNotEmpty(statusList)) {
                 filterBuilder.setStatuses(statusList);
