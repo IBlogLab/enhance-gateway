@@ -17,22 +17,18 @@ public class SchedulableWorkFilter {
     public final int to;
 
     public SchedulableWorkFilter() {
-        this(null, false, false, false,
-                Long.MIN_VALUE, Long.MAX_VALUE, 0, Integer.MAX_VALUE);
+        this(new Builder());
     }
 
-    public SchedulableWorkFilter(
-            List<String> types, boolean excludeFinished,
-            boolean uncredited, boolean excludeDiscarded,
-            long start, long end, int from, int to) {
-        this.types = types;
-        this.excludeFinished = excludeFinished;
-        this.uncredited = uncredited;
-        this.excludeDiscarded = excludeDiscarded;
-        this.start = start;
-        this.end = end;
-        this.from = from;
-        this.to = to;
+    public SchedulableWorkFilter(Builder builder) {
+        this.types = builder.types;
+        this.excludeFinished = builder.excludeFinished;
+        this.uncredited = builder.uncredited;
+        this.excludeDiscarded = builder.excludeDiscarded;
+        this.start = builder.start;
+        this.end = builder.end;
+        this.from = builder.from;
+        this.to = builder.to;
     }
 
     public static class Builder {
@@ -46,9 +42,7 @@ public class SchedulableWorkFilter {
         private int to = 1;
 
         public SchedulableWorkFilter build() {
-            return new SchedulableWorkFilter(
-                    this.types, this.excludeFinished, this.uncredited, this.excludeDiscarded,
-                    this.start, this.end, this.from, this.to);
+            return new SchedulableWorkFilter(this);
         }
 
         public Builder setTypes(List<String> types) {

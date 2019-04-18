@@ -18,23 +18,18 @@ public class OpenApiFilter {
     public final int to;
 
     private OpenApiFilter() {
-        this(null, null, null, null,
-                Long.MIN_VALUE, Long.MAX_VALUE, 0, Integer.MAX_VALUE);
+        this(new Builder());
     }
 
-    private OpenApiFilter(
-            List<String> uris, List<String> methods,
-            List<String> codes, List<String> types,
-            long start, long end,
-            int from, int to) {
-        this.uris = uris;
-        this.methods = methods;
-        this.codes = codes;
-        this.types = types;
-        this.start = start;
-        this.end = end;
-        this.from = from;
-        this.to = to;
+    private OpenApiFilter(Builder builder) {
+        this.uris = builder.uris;
+        this.methods = builder.methods;
+        this.codes = builder.codes;
+        this.types = builder.types;
+        this.start = builder.start;
+        this.end = builder.end;
+        this.from = builder.from;
+        this.to = builder.to;
     }
 
     public static class Builder {
@@ -48,9 +43,7 @@ public class OpenApiFilter {
         private int to = Integer.MAX_VALUE;
 
         public OpenApiFilter build() {
-            return new OpenApiFilter(
-                    this.uris, this.methods, this.codes, this.types,
-                    this.start, this.end, this.from, this.to);
+            return new OpenApiFilter(this);
         }
 
         public Builder setUris(List<String> uris) {

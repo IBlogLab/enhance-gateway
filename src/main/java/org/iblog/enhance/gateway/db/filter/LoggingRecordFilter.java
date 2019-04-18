@@ -32,44 +32,28 @@ public class LoggingRecordFilter {
     public final int to;
 
     private LoggingRecordFilter() {
-        this(null, null,
-                false, false,
-                false, false,
-                null, null, null, null,
-                null, null,
-                Long.MIN_VALUE, Long.MAX_VALUE,
-                new long[] {Long.MIN_VALUE, Long.MAX_VALUE},new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
-                0, Integer.MAX_VALUE);
+        this(new Builder());
     }
 
-    private LoggingRecordFilter(
-            List<String> uris, List<String> types,
-            boolean excludeAsync, boolean excludeSync,
-            boolean excludeHandleSuccess, boolean excludeHandleFail,
-            List<String> errors, List<String> methods,
-            List<Integer> statuses, List<String> froms,
-            List<String> tos,List<KeyWord> tags,
-            long start, long end,
-            long[] reqRange, long[] respRange,
-            int from, int to) {
-        this.uris = uris;
-        this.types = types;
-        this.statuses = statuses;
-        this.excludeAsync = excludeAsync;
-        this.excludeSync = excludeSync;
-        this.excludeHandleSuccess = excludeHandleSuccess;
-        this.excludeHandleFail = excludeHandleFail;
-        this.errors = errors;
-        this.methods = methods;
-        this.froms = froms;
-        this.tos = tos;
-        this.tags = tags;
-        this.start = start;
-        this.end = end;
-        this.reqRange = reqRange;
-        this.respRange = respRange;
-        this.from = from;
-        this.to = to;
+    private LoggingRecordFilter(Builder builder) {
+        this.uris = builder.uris;
+        this.types = builder.types;
+        this.statuses = builder.statuses;
+        this.excludeAsync = builder.excludeAsync;
+        this.excludeSync = builder.excludeSync;
+        this.excludeHandleSuccess = builder.excludeHandleSuccess;
+        this.excludeHandleFail = builder.excludeHandleFail;
+        this.errors = builder.errors;
+        this.methods = builder.methods;
+        this.froms = builder.froms;
+        this.tos = builder.tos;
+        this.tags = builder.tags;
+        this.start = builder.start;
+        this.end = builder.end;
+        this.reqRange = builder.reqRange;
+        this.respRange = builder.respRange;
+        this.from = builder.from;
+        this.to = builder.to;
     }
 
     public static class Builder {
@@ -93,16 +77,7 @@ public class LoggingRecordFilter {
         private int to = Integer.MAX_VALUE;
 
         public LoggingRecordFilter build() {
-            return new LoggingRecordFilter(
-                    this.uris, this.types,
-                    this.excludeAsync, this.excludeSync,
-                    this.excludeHandleSuccess, this.excludeHandleFail,
-                    this.errors, this.methods,
-                    this.statuses, this.froms,
-                    this.tos, this.tags,
-                    this.start, this.end,
-                    this.reqRange, this.respRange,
-                    this.from, this.to);
+            return new LoggingRecordFilter(this);
         }
 
         public Builder setUris(List<String> uris) {
