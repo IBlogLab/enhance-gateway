@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <start-class>org.iblog.enhance.gateway.Application</start-class>
         <parent-version>0.0.1-RELEASE</parent-version>
-        <google-guava-version>23.5-jre</google-guava-version>
+        <google-guava-version>29.0-jre</google-guava-version>
         <jdbi-version>3.5.1</jdbi-version>
         <druid-version>1.1.12</druid-version>
         <commons-collections4-version>4.1</commons-collections4-version>
